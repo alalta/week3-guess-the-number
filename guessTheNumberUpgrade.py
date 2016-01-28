@@ -1,4 +1,4 @@
-# replace the contents of this comment with your name
+# Anadia Lalta
 import random
 
 # -------------------------------------------------------------------
@@ -12,6 +12,21 @@ def generateNumber( topLimit ):
     # Write code in this function that calculates and           #
     # returns a random number between 1 and the user's topLimit #
     #############################################################
+
+import random
+def generateNumber( topLimit ):
+  secretNumber= random.randint(1, topLimit)
+  return random.randint(1, topLimit)
+
+print('Im thinking of a number')
+print(' What is the highest you would like to guess?')
+topLimit = int(input())
+print('Guess a number between 1 and ' + str(topLimit))
+guess= int(input())
+
+secretNumber= random.randint(1, topLimit)
+
+print('The random number is ' + str(secretNumber))    
     
 # end of generateNumber function -------------------------------------
 
